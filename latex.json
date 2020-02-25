@@ -1,0 +1,128 @@
+{
+	"example": {
+		"prefix": "BEX",
+		"body": "\\begin{example}\n\t$0\n\\end{example}",
+		"description": "Insert an example environment"
+	},
+	"remark": {
+		"prefix": "BRE",
+		"body": "\\begin{remark}\n\t$0\n\\end{remark}",
+		"description": "Insert a remark environment"
+	},
+	"shaded": {
+		"prefix": "BSH",
+		"body": "\\begin{shaded}\n\t$0\n\\end{shaded}",
+		"description": "Insert a shaded environment"
+	},
+	"tasks": {
+		"prefix": "BTA",
+		"body": "\\begin{tasks} $1\n\t\\task ${2:$$0$}\n\\end{tasks}",
+		"description": "Insert a task environment"
+	},
+	"equation system": {
+		"prefix": "BEA",
+		"body": "\\begin{equation$1}\n\t\\begin{aligned}\n\t\t$0\n\t\\end{aligned}\n\\end{equation$1}"
+	},
+	"task": {
+		"prefix": "task",
+		"body": "\\task ${1:$$0$}",
+		"description": "Insert \\task on a newline"
+	},
+	"a1,...,an": {
+		"prefix": "aa",
+		"body": "${1:a}_1,${1:a}_2,\\dots,${1:a}_n"
+	},
+	"v=(v1,v2,...,vn)": {
+		"prefix": "vv",
+		"body": "$\\mathbf{v}=(v_1,v_2,\\dots,v_n)$"
+	},
+	"u=(u1,u2,...,un)": {
+		"prefix": "vu",
+		"body": "$\\mathbf{u}=(u_1,u_2,\\dots,u_n)$"
+	},
+	"w=(w1,w2,...,wn)": {
+		"prefix": "vw",
+		"body": "$\\mathbf{w}=(w_1,w_2,\\dots,w_n)$"
+	},
+	"text emphasize with boldface": {
+		"prefix": "titbf",
+		"body": "\\textbf{\\emph{$1}}$0"
+	},
+	"Typical linear system": {
+		"prefix": "ax=b",
+		"body": "\\begin{equation${1:*}}\n  \\begin{aligned}\n    a_{11}x_1+a_{12}x_2+\\cdots+a_{1n}x_n&=b1\\\\\n    a_{21}x_1+a_{22}x_2+\\cdots+a_{2n}x_n&=b2\\\\\n    \\vdots\\\\\n    a_{n1}x_1+a_{n2}x_2+\\cdots+a_{nn}x_n&=bn\n  \\end{aligned}\n\\end{equation${1:*}}\n$0"
+	},
+	"Multiple Figures": {
+		"prefix": "sfig",
+		"body": "\\begin{figure}[h]\n  \\begin{subfigure}{.3\\textwidth}\n    \\centering\n    \\includegraphics[width=.8\\linewidth]{$1}\n    \\caption{$2}\n    \\label{fig:$3}\n  \\end{subfigure}\n  \\begin{subfigure}{.3\\textwidth}\n    \\centering\n    \\includegraphics[width=.8\\linewidth]{$4}\n    \\caption{$5}\n    \\label{fig:$6}\n  \\end{subfigure}\n  \\begin{subfigure}{.3\\textwidth}\n    \\centering\n    \\includegraphics[width=.8\\linewidth]{$7}\n    \\caption{$8}\n    \\label{fig:$9}\n  \\end{subfigure}\n  \\caption{$10}\n  \\label{fig:fig$11}\n\\end{figure}\n$0"
+	},
+	"Augmented Matrix A|b": {
+		"prefix": "Ab",
+		"body": "\\begin{equation}\n  \\begin{bmatrix}\n    a_{11}&a_{12}&\\cdots&a_{1n}&b_1\\\\\n    a_{21}&a_{22}&\\cdots&a_{2n}&b_2\\\\\n    \\vdots&\\vdots&&\\vdots&\\vdots\\\\\n    a_{m1}&a_{m2}&\\cdots&a_{mn}&b_m\n  \\end{bmatrix}\n\\end{equation}"
+	},
+	"Matrix (A)mxn": {
+		"prefix": "Amn",
+		"body": "\\begin{equation$1}\n  \\begin{bmatrix}\n    ${2:a}_{11}&${2:a}_{12}&\\cdots&${2:a}_{1n}\\\\\n    ${2:a}_{21}&${2:a}_{22}&\\cdots&${2:a}_{2n}\\\\\n    \\vdots&\\vdots&&\\vdots\\\\\n    ${2:a}_{${3:m}1}&${2:a}_{${3:m}2}&\\cdots&${2:a}_{${3:m}n}\n  \\end{bmatrix}\n\\end{equation$1}\n$0"
+	},
+	"n x n": {
+		"prefix": "nxn", 
+		"body": "$ n\\times n$" 
+	},
+	"Ax=b": {
+		"prefix": "ax=b",
+		"body": "$ A \\mathbf{x}=\\mathbf{b}$"
+	},
+	"lim limits": {
+		"prefix": "lim",
+		"body": "\\lim\\limits_{${1:x}\\to ${2:0}} $0"
+	},
+	"fraction displaystyle": { 
+		"prefix": "dfrac", 
+		"body": "\\dfrac{$1}{$2}$0" 
+	},
+	"square root": { "prefix": "sqrt", "body": "\\sqrt{$1}$0" },
+	"integral displaystyle": {
+		"prefix": "dint",
+		"body": "\\displaystyle\\int"
+	},
+	"sum displaystyle": {
+		"prefix": "dsum",
+		"body": "\\displaystyle\\sum_{${1:k=1}}^{${2:n}}$0"
+	},
+	"subfigure": {
+		"prefix": "subfigure",
+		"body": "\\begin{subfigure}{0.${1:5}\\textwidth}\n  \\centering\n  ${4:\\includegraphics}\n  \\caption{$2}\n  \\label{$3}\n\\end{subfigure}\n$0"
+	},
+	"Rn": { 
+		"prefix": "rn", 
+		"body": "$\\R^${1:n}$$0" 
+	},
+	"||v||": {
+		"prefix": "nv",
+		"body": "\\|\\mathbf{${1:v}}\\|$0"
+	},
+	"u.v": { 
+		"prefix": "udv", 
+		"body": "\\mathbf{u\\cdot v}" 
+	},
+	"<u,v>": {
+		"prefix": "uiv",
+		"body": "\\langle\\mathbf{${1:u},${2:v}}\\rangle$0"
+	},
+	"ddx": {
+		"prefix": "ddx",
+		"body": "\\dfrac{\\mathrm{d}}{\\mathrm{d} ${1:x}}$0"
+	},
+	"{a_n}": {
+		"prefix": "an",
+		"body": "$\\{a_n\\\\}$"
+	},
+	"{b_n}": {
+		"prefix": "bn",
+		"body": "$\\{b_n\\\\}$"
+	},
+	"{c_n}": {
+		"prefix": "cn",
+		"body": "$\\{c_n\\\\}$"
+	},
+}
