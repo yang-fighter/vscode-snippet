@@ -12,10 +12,20 @@
 	// 	],
 	// 	"description": "Log output to console"
 	// }
-	"math_block": {
+	"math block": {
 		"prefix": "math_block",
-		"body": ".. math::\n\n$0",
+		"body": ".. math::\n\n\t$0",
 		"description": "Math Block",
+	},
+	"solution block": {
+		"prefix": "solution",
+		"body": ".. toggle-header::\n\t:header: **Solution**\n\n\t$0",
+		"description": "Solution block with toggle-header",
+	},
+	"horizontal line": {
+		"prefix": "hr",
+		"body": "|-----|",
+		"description": "horizontal line |-----|",
 	},
 	"equation system": {
 		"prefix": "BEA",
